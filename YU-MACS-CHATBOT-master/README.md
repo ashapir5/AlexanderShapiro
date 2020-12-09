@@ -1,6 +1,6 @@
 # YU-MACS-CHATBOT
 
-A chatbot implementation with PyTorch and NLTK libraries and a Feed Forward Neural net with 2 hidden layers. 
+A chatbot implementation with PyTorch and NLTK libraries and a Feed Forward Neural network with 2 hidden layers. 
 
 The training data is in the intents.json file. In this file, there are different intents. For each intent, there is a tag (a class label) and there are different patterns for the tag and then a response for the tag. When a question comes in, the bot tries to classify the question into one of the tags and then returns the response for that tag. If the bot cannot classify the question into one of the tags, then it returns, "I'm sorry, I do not know the answer to that question." 
 
