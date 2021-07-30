@@ -1,10 +1,10 @@
 # YU-MACS-CHATBOT
 
-A chatbot implementation with PyTorch and NLTK libraries and a Feed Forward Neural net with 2 hidden layers. 
+A chatbot implementation with PyTorch and NLTK libraries and a Feed Forward Neural network with 2 hidden layers. 
 
 The training data is in the intents.json file. In this file, there are different intents. For each intent, there is a tag (a class label) and there are different patterns for the tag and then a response for the tag. When a question comes in, the bot tries to classify the question into one of the tags and then returns the response for that tag. If the bot cannot classify the question into one of the tags, then it returns, "I'm sorry, I do not know the answer to that question." 
 
-With the training data, we train the deep learning model using a concept called, "Bag of Words". In order to do this, we collect all the words from all the different patterns, and put them into a String array (called "all_words"). Then, for each pattern we create an array, called bag_of_words, with the same size as the all_words array and if the word from the pattern is included in the all_words array, we put a 1 in the associated position in the newly created bag_of_words array. Otherwise, we put a 0. In order to get from the question to the bag of words, we have to apply two NLP technique. The first one is called tokenization, which means splitting the String into meaningful units (e.g. words, characters, numbers, punctuation). The next concept we apply is stemming, which generates the root form of the words. In other words, stemming chops off the end of words. 
+With the training data, we train the deep learning model using a concept called, "Bag of Words". In order to do this, we collect all the words from all the different patterns, and put them into a String array (called "all_words"). Then, for each pattern we create an array, called bag_of_words, with the same size as the all_words array and if the word from the pattern is included in the all_words array, we put a 1 in the associated position in the newly created bag_of_words array. Otherwise, we put a 0. In order to get from the question to the bag of words, we have to apply two NLP techniques. The first one is called tokenization, which means splitting the String into meaningful units (e.g. words, characters, numbers, punctuation). The next concept we apply is stemming, which generates the root form of the words. In other words, stemming chops off the end of words. 
 
 Example of our NLP process:
 
